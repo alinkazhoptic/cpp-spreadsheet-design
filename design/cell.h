@@ -44,6 +44,10 @@ public:
     template<typename Iterator>
     void SetCellsReferencingToThis(Iter start, Iter stop);
 
+    void AddNewCellContainedInThis(Position);
+    void AddNewCellReferencedToThis(Position);
+
+
     // Проверяет, есть ли среди всех зависимостей от данной ячейки, 
     // ячейка с координатами pos. Необходим для обнаружения циклических зависимостей.
     // Если в данную ячейку пытаемся записать ячейку с позицией Y, 
